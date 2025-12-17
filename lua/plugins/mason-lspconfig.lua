@@ -45,7 +45,6 @@ return {
       "vimls",
       "vue_ls",
       "lemminx",
-      "gitlab_ci_ls",
       "yamlls",
       "zls"
     }
