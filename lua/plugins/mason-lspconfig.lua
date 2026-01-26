@@ -40,6 +40,7 @@ return {
       "rust_analyzer",
       "sqlls",
       "svelte",
+      "ty",
       "harper_ls",
       "tinymist",
       "vimls",
