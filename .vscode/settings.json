@@ -1,0 +1,17 @@
+{
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.runtime.special": {
+        "vim": "require",
+        "require": "require"
+    },
+    // reference Neovim runtime Lua 
+    "Lua.workspace.library": [
+        "D:\\Neovim\\share\\nvim\\runtime\\lua"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.completion.enable": true,
+    "Lua.completion.callSnippet": "Both",
+    "Lua.diagnostics.globals": [
+        "vim"
+    ]
+}
