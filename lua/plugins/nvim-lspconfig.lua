@@ -5,10 +5,12 @@ return {
     local capabilities = require "cmp_nvim_lsp".default_capabilities()
 
     --  通用 LSP 配置
-    local lsps = { 'angularls', 'bashls', 'clangd', 'cssls', 'dockerls', 'gopls', 'gradle_ls', 'graphql', 'groovyls',
-      'html', 'jdtls', 'eslint', 'kotlin_lsp', 'ltex', 'lua_ls', 'marksman', 'denols',
-      'nginx_language_server', 'powershell_es', 'pyright', 'ruff', 'rust_analyzer', 'sqlls', 'tinymist', "ty",
-      'vimls', 'vue_ls', 'lemminx', 'yamlls', 'ast_grep', 'zls' }
+    local lsps = { 'angularls', 'bashls', 'clangd', 'cssls', 'dockerls', 'gopls', 'gradle_ls',
+      'graphql', 'groovyls', 'html', 'jdtls', 'eslint', 'kotlin_lsp', 'ltex', 'lua_ls',
+      'marksman', 'denols', 'nginx_language_server', 'powershell_es', 'pyright', 'ruff',
+      'rust_analyzer', 'sqls', "postgres-language-server", 'tinymist', "ty", 'vimls', 'vue_ls',
+      'lemminx', 'yamlls', 'ast_grep', 'zls'
+    }
 
     -- 为所有 LSP 提供 cmp
     for _, lsp in ipairs(lsps) do
@@ -20,8 +22,9 @@ return {
     -- 为 emmet_language_server 提供 cmp
     vim.lsp.config('emmet_language_server', {
       capabilities = capabilities,
-      filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug",
-        "typescriptreact" },
+      filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass",
+        "scss", "pug", "typescriptreact"
+      },
       init_options = {
         ---@type table<string, string>
         includeLanguages = {},
