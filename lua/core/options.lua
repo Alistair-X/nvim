@@ -59,7 +59,7 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- 主题
--- 当前命令已移至colorscheme.lua
+-- 当前命令已移至 colorscheme.lua
 -- vim.cmd("colorscheme tokyonight-moon")
 -- vim.cmd([[colorscheme tokyonight-moon]])
 
