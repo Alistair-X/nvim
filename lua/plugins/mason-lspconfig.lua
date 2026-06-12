@@ -39,7 +39,7 @@ return {
       "ruff",
       "rust_analyzer",
       "sqls",
-      "postgres-language-server",
+      "postgres_lsp",
       "svelte",
       "ty",
       "harper_ls",
